@@ -31,7 +31,7 @@
     "grunt": "~0.3.17",
     "express": "~3.0.5"
   },
-  "keywords": [],
+  "keywords": ["icon", "apple-touch-icon"],
   "dependencies": {
     "cheerio": "~0.10.5",
     "async": "~0.1.22",
