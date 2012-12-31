@@ -8,9 +8,11 @@ Icons is designed to find the URLs of a web app's icons.
 
 
 Current version is able to discover following icons:
-    * [Apple's apple-touch-icons](https://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-It supports redirection by the Refresh HTTP Header or by its markup equivalent (the latter being used at the time of writing by e.g.  [Twitter](http://twitter.com)). It also supports the HTML link element, given by the annotation `<link rel="alternate" media="handheld" href="http://m.example.com" />` (being used at the time of writing by e.g. [NYTimes](http://nytimes.com)).
+* [Apple's apple-touch-icons](https://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+
+It supports redirection by the Refresh HTTP Header or its markup equivalent, the latter being used at the time of writing by [Twitter](http://twitter.com). It also supports redirection to the URL provided the HTML link element with `@rel="alternate"` and `@media="handheld"`, being used at the time of writing by [NYTimes](http://nytimes.com).
+
 
 ```javascript
 var icons = require('icons');
