@@ -1,0 +1,34 @@
+{
+  "name": "icons",
+  "description": "Find the URLs of the site's icons",
+  "version": "0.1.0",
+  "homepage": "https://github.com/pedrofaustino/node-icons",
+  "author": {
+    "name": "Pedro Faustino",
+    "email": "pedrobandim@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pedrofaustino/node-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pedrofaustino/node-icons/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pedrofaustino/node-icons/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/icons",
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.17"
+  },
+  "keywords": []
+}
