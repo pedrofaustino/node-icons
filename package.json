@@ -1,6 +1,6 @@
 {
   "name": "icons",
-  "description": "Find the URLs of the site's icons",
+  "description": "Find the URLs of a web app's icons",
   "version": "0.1.0",
   "homepage": "https://github.com/pedrofaustino/node-icons",
   "author": {

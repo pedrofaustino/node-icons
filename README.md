@@ -1,26 +1,52 @@
-# icons
+# Icons - Find the URLs of a web app's icons
 
-Find the URLs of the site's icons
+## Install
+`npm install icons`
 
-## Getting Started
-Install the module with: `npm install icons`
+## Simple to use
+Icons is designed to find the URLs of a web app's icons.
+
+
+Current version is able to discover following icons:
+    * [Apple's apple-touch-icons](https://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+
+It supports redirection by the Refresh HTTP Header or by its markup equivalent (the latter being used at the time of writing by e.g.  [Twitter](http://twitter.com)). It also supports the HTML link element, given by the annotation `<link rel="alternate" media="handheld" href="http://m.example.com" />` (being used at the time of writing by e.g. [NYTimes](http://nytimes.com)).
 
 ```javascript
 var icons = require('icons');
-icons.awesome(); // "awesome"
+icons.discover("https://github.com", function(err, icons) {
+    console.log(err ? ("ERROR " + err) : icons);
+});
 ```
 
-## Documentation
-_(Coming soon)_
+prints
 
-## Examples
-_(Coming soon)_
+```javascript
+[{
+    name: ['iPhone', 'iPod Touch', 'Android', 'BlackBerry'],
+    pixels: [0, 57],
+    urls: ['http://www.github.com/apple-touch-icon-114.png'],
+    location: ['link']
+}, {
+    name: 'iPad',
+    pixels: [72],
+    urls: ['http://www.github.com/apple-touch-icon-144.png'],
+    location: ['link']
+}, {
+    name: 'iPhone Retina',
+    pixels: [114],
+    urls: ['http://www.github.com/apple-touch-icon-114.png'],
+    location: ['link']
+}, {
+    name: 'iPad Retina',
+    pixels: [144],
+    urls: ['http://www.github.com/apple-touch-icon-144.png'],
+    location: ['link']
+}]
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/gruntjs/grunt).
-
-## Release History
-_(Nothing yet)_
 
 ## License
 Copyright (c) 2012 Pedro Faustino  
