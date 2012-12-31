@@ -28,7 +28,13 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.3.17"
+    "grunt": "~0.3.17",
+    "express": "~3.0.5"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "cheerio": "~0.10.5",
+    "async": "~0.1.22",
+    "request": "~2.12.0"
+  }
 }
