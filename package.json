@@ -1,7 +1,7 @@
 {
   "name": "icons",
   "description": "Find the URLs of a web app's icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/pedrofaustino/node-icons",
   "author": {
     "name": "Pedro Faustino",
@@ -31,7 +31,10 @@
     "grunt": "~0.3.17",
     "express": "~3.0.5"
   },
-  "keywords": ["icon", "apple-touch-icon"],
+  "keywords": [
+    "icon",
+    "apple-touch-icon"
+  ],
   "dependencies": {
     "cheerio": "~0.10.5",
     "async": "~0.1.22",
