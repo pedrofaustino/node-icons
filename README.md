@@ -11,7 +11,7 @@ Current version is able to discover following icons:
 
 * [Apple's apple-touch-icons](https://developer.apple.com/library/ios/#documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-It supports redirection by the Refresh HTTP Header or its markup equivalent, the latter being used at the time of writing by [Twitter](http://twitter.com). It also supports redirection to the URL provided the HTML link element with `@rel="alternate"` and `@media="handheld"`, being used at the time of writing by [NYTimes](http://nytimes.com).
+It supports redirection by the Refresh HTTP Header or its markup equivalent, the latter being used at the time of writing by [Twitter](http://twitter.com). It also supports redirection to the URL provided by the HTML link element with `@rel="alternate"` and `@media="handheld"`, being used at the time of writing by [NYTimes](http://nytimes.com).
 
 
 ```javascript
